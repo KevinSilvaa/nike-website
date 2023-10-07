@@ -7,6 +7,207 @@
     <link rel="stylesheet" href="../public/output.css">
 </head>
 <body class="">
-    
+    <header>
+        <nav class="px-16 py-8 flex justify-between items-center max-container">
+            <a href="#">
+                <img src="./assets/images/header-logo.svg" alt="Logo" width="130px" height="30px">
+            </a>
+            <ul class="flex justify-center gap-16 flex-1 max-lg:hidden">
+                <li>
+                    <a href="#home" class="a-nav">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="a-nav">About</a>
+                </li>
+                <li>
+                    <a href="#products" class="a-nav">Products</a>
+                </li>
+                <li>
+                    <a href="#contact-us" class="a-nav">Contact us</a>
+                </li>
+            </ul>
+            <div class="block lg:hidden">
+                <a>
+                    <img src="./assets/icons/hamburger.svg" alt="Burguer menu" width="25px" height="25px">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="font-montserrat">
+        
+        <!-- *Home -->
+        <section class="flex flex-col gap-8 pb-24">
+            
+            <!-- *Home info -->
+            <section id="home" class="px-16">
+                <div class="w-full">
+                    <p class="text-xl text-coral-red mb-11 mt-4">Our Summer collections</p>
+                    <h1 class="font-bold font-palanquin text-8xl">
+                        <span class="relative">The New Arrival</span>
+                        <br>
+                        <span class="text-coral-red inline-block mt-5">Nike</span>
+                        Shoes
+                    </h1>
+                    <p class="text-slate-gray leading-8 w-3/6 text-lg mt-8 mb-14">
+                        Discover stylish Nike arrivals, quality comfort, and innovation for your active life
+                    </p>
+                    <button class="flex items-center gap-4 bg-coral-red py-4 px-8 text-lg rounded-full text-white">
+                        Shop now
+                        <img src="./assets/icons/arrow-right.svg" alt="Arrow icon">
+                    </button>
+                    
+                    <!-- *Estátisticas -->
+                    <div class="flex gap-16 mt-20">
+                        <div>
+                            <h3 class="estatisticas-titulo">1k+</h3>
+                            <p class="estatisticas-texto">Brands</p>
+                        </div>
+                        <div>
+                            <h3 class="estatisticas-titulo">500+</h3>
+                            <p class="estatisticas-texto">Shops</p>
+                        </div>
+                        <div>
+                            <h3 class="estatisticas-titulo">250k+</h3>
+                            <p class="estatisticas-texto">Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- *Home image -->
+            <div class="bg-hero bg-primary w-full mt-2 py-40 bg-center bg-cover flex justify-center items-center">
+                <img src="./assets/images/big-shoe1.png" alt="Tenis 1" width="610px" height="500px" class="relative object-contain">
+            </div>
+        </section>
+
+        <!-- *Popular products -->
+        <section class="padding">
+            <section class="max-container" id="products">
+                
+                <!-- *Popular products texts -->
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-5xl font-palanquin">
+                        Our
+                        <span class="text-coral-red">Popular</span>
+                        Products
+                    </h2>
+                    <p class="text-slate-gray">
+                        Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value
+                    </p>
+                </div>
+
+                <!-- *Popular products cards -->
+                <div class="section-cards">
+                    
+                    <!-- *Card 1 -->
+                    <div class="cards">
+                        <img src="./assets/images/shoe4.svg" alt="Nike Air Jordan-01" class="w-[280px] h-[280px]">
+                        <div class="card-rating">
+                            <img src="./assets/icons/star.svg" alt="Star Logo" width="24px" height="24px">
+                            <p class="rating-texto">(4.5)</p>
+                        </div>
+                        <p class="shoes-name">Nike Air Jordan-01</p>
+                        <p class="shoes-price">$209.99</p>
+                    </div>
+                    
+                    <!-- *Card 2 -->
+                    <div class="cards">
+                        <img src="./assets/images/shoe5.svg" alt="Nike Air Jordan-10" class="w-[280px] h-[280px]">
+                        <div class="card-rating">
+                            <img src="./assets/icons/star.svg" alt="Star Logo" width="24px" height="24px">
+                            <p class="rating-texto">(4.5)</p>
+                        </div>
+                        <p class="shoes-name">Nike Air Jordan-10</p>
+                        <p class="shoes-price">$199.99</p>
+                    </div>
+                    
+                    <!-- *Card 3 -->
+                    <div class="cards">
+                        <img src="./assets/images/shoe6.svg" alt="Nike Air Jordan-100" class="w-[280px] h-[280px]">
+                        <div class="card-rating">
+                            <img src="./assets/icons/star.svg" alt="Star Logo" width="24px" height="24px">
+                            <p class="rating-texto">(4.5)</p>
+                        </div>
+                        <p class="shoes-name">Nike Air Jordan-100</p>
+                        <p class="shoes-price">$229.99</p>
+                    </div>
+                    
+                    <!-- *Card 4 -->
+                    <div class="cards">
+                        <img src="./assets/images/shoe7.svg" alt="Nike Air Jordan-001" class="w-[280px] h-[280px]">
+                        <div class="card-rating">
+                            <img src="./assets/icons/star.svg" alt="Star Logo" width="24px" height="24px">
+                            <p class="rating-texto">(4.5)</p>
+                        </div>
+                        <p class="shoes-name">Nike Air Jordan-001</p>
+                        <p class="shoes-price">$229.99</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- *About us -->
+        <section class="padding">
+            <section class="flex max-lg:flex-col justify-between gap-10 w-full max-container" id="about-us">
+                
+                <!-- *About us text -->
+                <div class="flex flex-col flex-1">
+                    <h2 class="text-5xl font-bold font-palanquin">
+                        We Provide You
+                        <span class="text-coral-red">Super Quality</span>
+                        Shoes
+                    </h2>
+                    <p class="info-text mt-4">
+                        Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance.
+                    </p>
+                    <p class="mt-6 info-text">Our dedication to detail and excellence ensures your satisfaction</p>
+                </div>
+
+                <!-- *About us button -->
+                <div class="flex items-start">
+                    <button class="flex gap-4 py-4 px-8 bg-coral-red rounded-full text-white text-lg items-center">
+                        Shop now
+                        <img src="./assets/icons/arrow-right.svg" alt="Arrow icon">
+                    </button>
+                </div>
+                
+                <!-- *Shoes image -->
+                <div class="flex items-center justify-center">
+                    <img src="./assets/images/shoe8.svg" width="570px" height="520px" alt="Shoes image">
+                </div>
+            </section>
+        </section>
+
+        <!-- *Our benefits -->
+        <section class="px-16 py-10">
+            <section class="max-container flex justify-center flex-wrap gap-10">
+                <div class="card-benefits">
+                    <div class="img-benefits">
+                        <img src="./assets/icons/truck-fast.svg" alt="Truck icon" width="24px" height="24px">
+                    </div>
+                    <h3 class="title-benefits">Free shipping</h3>
+                    <p class="info-text mt-5">Enjoy seamless shopping with our complimentary shipping service.</p>
+                </div>
+                <div class="card-benefits">
+                    <div class="img-benefits">
+                        <img src="./assets/icons/shield-tick.svg" alt="Paymente approved icon" width="24px" height="24px">
+                    </div>
+                    <h3 class="title-benefits">Secure payment</h3>
+                    <p class="info-text mt-5">Experience worry-free transactions with our secure payment options.</p>
+                </div>
+                <div class="card-benefits">
+                    <div class="img-benefits">
+                        <img src="./assets/icons/support.svg" alt="Support icon" width="24px" height="24px">
+                    </div>
+                    <h3 class="title-benefits">Love to help you</h3>
+                    <p class="info-text mt-5">Our dedicated team is here to assist you every step of the way.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>

@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         'primary': '#ECEEFF',
         'coral-red': '#FF6452',
-        'slate-gray': '##6D6D6D',
+        'slate-gray': '#6D6D6D',
         'pale-blue': '#F5F6FF',
         'white-400': 'rgba(255, 255, 255, 0.80)'
       },
@@ -15,15 +15,13 @@ module.exports = {
         'montserrat': ['Montserrat', 'sans-serif']
       },
       backgroundImage: {
-        'hero': "url('./src/assets/images/collection-background.svg')",
-        'card': "url('./src/assets/images/thumbnail-background.svg')"
+        'hero': "url('../src/assets/images/collection-background.svg')",
+        'card': "url('../src/assets/images/thumbnail-background.svg')"
       },
       boxShadow: {
-        '3x1': '0 10px 40px rgba(0, 0, 0, 0.1'
+        '3x1': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
-
     },
   },
   plugins: [],
 }
-
