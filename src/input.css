@@ -12,7 +12,7 @@
     
     /* *Header navbar */
     .a-nav {
-        @apply font-montserrat text-xl text-slate-gray leading-normal;
+        @apply font-montserrat text-lg text-slate-gray leading-normal;
     }
     
     /* *Statistics section in Home */
@@ -25,9 +25,13 @@
     
     /* *Padding to apply in sections */
     .padding {
-        @apply py-24 px-16;
+        @apply py-16 px-8 sm:py-24 sm:px-16;
     }
     
+    /* *Shoes to display */
+    .shoes-option {
+        @apply bg-card bg-center bg-cover flex justify-center items-center sm:w-40 sm:h-40 rounded-xl max-sm:p-4;
+    }
     
     /* *Popular products cards */
     .section-cards {

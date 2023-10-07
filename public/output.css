@@ -545,7 +545,7 @@ video {
 
 .a-nav{
   font-family: Montserrat, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   line-height: 1.5;
   --tw-text-opacity: 1;
@@ -570,10 +570,44 @@ video {
 /* *Padding to apply in sections */
 
 .padding{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 640px){
+  .padding{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* *Shoes to display */
+
+.shoes-option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background-image: url('../src/assets/images/thumbnail-background.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media not all and (min-width: 640px){
+  .shoes-option{
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 640px){
+  .shoes-option{
+    height: 10rem;
+    width: 10rem;
+  }
 }
 
 /* *Popular products cards */
@@ -690,8 +724,20 @@ video {
   font-weight: 700;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
+}
+
+.bottom-\[-5\%\]{
+  bottom: -5%;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .mb-11{
@@ -702,8 +748,8 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mt-20{
@@ -726,10 +772,6 @@ video {
   margin-top: 2rem;
 }
 
-.block{
-  display: block;
-}
-
 .inline-block{
   display: inline-block;
 }
@@ -738,12 +780,16 @@ video {
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-\[280px\]{
   height: 280px;
 }
 
-.w-3\/6{
-  width: 50%;
+.h-screen{
+  height: 100vh;
 }
 
 .w-\[280px\]{
@@ -752,6 +798,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .flex-1{
@@ -794,12 +844,32 @@ video {
   gap: 1rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-8{
   gap: 2rem;
 }
 
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.border-transparent{
+  border-color: transparent;
 }
 
 .bg-coral-red{
@@ -810,6 +880,11 @@ video {
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(236 238 255 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-hero{
@@ -849,11 +924,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-40{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -861,6 +931,18 @@ video {
 
 .pb-24{
   padding-bottom: 6rem;
+}
+
+.pr-10{
+  padding-right: 2.5rem;
+}
+
+.pt-28{
+  padding-top: 7rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .font-montserrat{
@@ -876,8 +958,8 @@ video {
   line-height: 1;
 }
 
-.text-8xl{
-  font-size: 6rem;
+.text-7xl{
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -914,7 +996,18 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media not all and (min-width: 1280px){
+  .max-xl\:py-40{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
 @media not all and (min-width: 1024px){
+  .max-lg\:block{
+    display: block;
+  }
+
   .max-lg\:hidden{
     display: none;
   }
@@ -924,8 +1017,74 @@ video {
   }
 }
 
+@media not all and (min-width: 640px){
+  .max-sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .max-sm\:leading-\[82px\]{
+    line-height: 82px;
+  }
+}
+
+@media (min-width: 640px){
+  .sm\:max-w-sm{
+    max-width: 24rem;
+  }
+
+  .sm\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
+
 @media (min-width: 1024px){
-  .lg\:hidden{
-    display: none;
+  .lg\:max-w-lg{
+    max-width: 32rem;
+  }
+
+  .lg\:flex-col{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:min-h-screen{
+    min-height: 100vh;
+  }
+
+  .xl\:w-2\/5{
+    width: 40%;
+  }
+
+  .xl\:w-4\/5{
+    width: 80%;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:whitespace-nowrap{
+    white-space: nowrap;
+  }
+
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xl\:pl-0{
+    padding-left: 0px;
+  }
+
+  .xl\:pt-0{
+    padding-top: 0px;
   }
 }
