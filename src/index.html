@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="scroll-smooth" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
     <link rel="stylesheet" href="../public/output.css">
+    <script src="./js/main.js" defer></script>
 </head>
-<body class="w-screen h-screen overflow-x-hidden scroll-smooth">
+<body class="w-screen h-screen overflow-x-hidden">
+    
+    <!-- *Header -->
     <header class="px-8 py-8 sm:px-16 w-full absolute z-10">
-        <nav class="flex justify-between items-center max-container">
+        
+        <!-- *Header Navbar -->
+        <nav class="flex justify-between items-center max-container md:">
             <a href="index.html">
                 <img src="./assets/images/header-logo.svg" alt="Logo" width="130px" height="30px">
             </a>
-            <ul class="flex justify-center gap-16 flex-1 max-lg:hidden">
+            <ul class="flex justify-center gap-16 flex-1 max-lg:hidden" id="navbar-ul">
                 <li>
                     <a href="#home" class="a-nav">Home</a>
                 </li>
@@ -23,15 +28,25 @@
                     <a href="#products" class="a-nav">Products</a>
                 </li>
                 <li>
-                    <a href="#contact-us" class="a-nav">Contact us</a>
+                    <a href="#contact-us" class="a-nav">Contact Us</a>
                 </li>
             </ul>
+            
+            <!-- *Hamburger menu icon -->
             <div class="hidden max-lg:block">
                 <a>
-                    <img src="./assets/icons/hamburger.svg" alt="Burguer menu" width="25px" height="25px">
+                    <img src="./assets/icons/hamburger.svg" alt="Burger menu" width="25px" height="25px" id="menu">
                 </a>
             </div>
         </nav>
+        
+        <!-- *Label for hamburger menu -->
+        <div class="div-mobile scale-x-0 duration-200 origin-right text" id="mobile">
+            <a href="#home" class="nav-mobile">Home</a>
+            <a href="#about-us" class="nav-mobile">About Us</a>
+            <a href="#products" class="nav-mobile">Products</a>
+            <a href="#contact-us" class="nav-mobile">Contact Us</a>
+        </div>
     </header>
     <main class="font-montserrat">
         
@@ -42,7 +57,7 @@
             <section id="home" class="px-8 sm:px-16 xl:w-5/12 flex flex-col justify-center max-container min-h-screen xl:pl-8">
                 <div class="relative xl:w-full flex flex-col justify-center items-start w-full min-xl:px-16 pt-28">
                     <p class="text-coral-red text-xl mb-11">Our Summer collections</p>
-                    <h1 class="font-bold font-palanquin text-7xl sm:text-8xl max-sm:leading-[82px]">
+                    <h1 class="font-bold font-palanquin text-7xl sm:text-8xl max-sm:leading-[82px] z-[5]">
                         <span class="xl:whitespace-nowrap xl:bg-white relative z-10 pr-10">The New Arrival</span>
                         <br>
                         <span class="text-coral-red inline-block xl:mt-6">Nike</span>
@@ -56,7 +71,7 @@
                         <img src="./assets/icons/arrow-right.svg" alt="Arrow icon">
                     </button>
                     
-                    <!-- *Estátisticas -->
+                    <!-- *Statistics -->
                     <div class="flex gap-16 mt-20 flex-wrap">
                         <div>
                             <h3 class="estatisticas-titulo">1k+</h3>
@@ -75,24 +90,26 @@
             </section>
             
             <!-- *Home image -->
-            <div class="bg-hero relative bg-primary xl:w-full max-xl:py-40 xl:min-h-screen bg-center bg-cover flex items-center justify-center wide:mr-20">
+            <div class="bg-hero relative bg-primary xl:w-full max-xl:py-40 xl:min-h-screen bg-center bg-cover flex items-center justify-center wide:mr-20 z-0">
                 <img src="./assets/images/big-shoe1.png" alt="Shoes collection" width="610px" height="500px" class="object-contain" id="big-shoes">
                 
                 <!-- *Shoes options to display image -->
                 <div class="absolute bottom-[-5%] flex max-sm:px-6 gap-6 items-center justify-center">
                     
                     <!-- *Option 1 -->
+                    <div>
                         <div class="border-2 border-coral-red rounded-xl">
                             <div class="shoes-option"> 
-                                <img src="./assets/images/thumbnail-shoe1.svg" width="130px" height="100px" class="object-contain">
+                                <img src="./assets/images/thumbnail-shoe1.svg" width="130px" height="100px" class="object-contain" data-img-id="img1">
                             </div>
                         </div>
+                    </div>    
 
                     <!-- *Option 2 -->
                     <div>
                         <div class="border-2 border-transparent rounded-xl">
                             <div class="shoes-option">
-                                <img src="./assets/images/thumbnail-shoe2.svg" width="130px" height="100px" class="object-contain">
+                                <img src="./assets/images/thumbnail-shoe2.svg" width="130px" height="100px" class="object-contain" data-img-id="img2">
                             </div>
                         </div>
                     </div>
@@ -101,7 +118,7 @@
                     <div>
                         <div class="border-2 border-transparent rounded-xl">
                             <div class="shoes-option">
-                                <img src="./assets/images/thumbnail-shoe3.svg" width="130px" height="100px" class="object-contain">
+                                <img src="./assets/images/thumbnail-shoe3.svg" width="130px" height="100px" class="object-contain" data-img-id="img3">
                             </div>
                         </div>
                     </div>
