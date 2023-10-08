@@ -6,10 +6,10 @@
     <title>Nike</title>
     <link rel="stylesheet" href="../public/output.css">
 </head>
-<body class="w-screen h-screen overflow-x-hidden">
+<body class="w-screen h-screen overflow-x-hidden scroll-smooth">
     <header class="px-8 py-8 sm:px-16 w-full absolute z-10">
         <nav class="flex justify-between items-center max-container">
-            <a href="#">
+            <a href="index.html">
                 <img src="./assets/images/header-logo.svg" alt="Logo" width="130px" height="30px">
             </a>
             <ul class="flex justify-center gap-16 flex-1 max-lg:hidden">
@@ -17,7 +17,7 @@
                     <a href="#home" class="a-nav">Home</a>
                 </li>
                 <li>
-                    <a href="#about" class="a-nav">About Us</a>
+                    <a href="#about-us" class="a-nav">About Us</a>
                 </li>
                 <li>
                     <a href="#products" class="a-nav">Products</a>
@@ -36,22 +36,22 @@
     <main class="font-montserrat">
         
         <!-- *Home -->
-        <section class="gap-10 pt-6 xl:pt-0 pb-24 xl:pl-0 wide:pl-16 flex flex-col justify-between xl:flex-row max-container">
+        <section class="gap-10 pt-6 xl:pt-0 pb-24 xl:px-8 wide:pl-16 flex flex-col justify-between xl:flex-row max-container">
             
             <!-- *Home info -->
-            <section id="home" class="px-8 sm:px-16 xl:w-2/5 flex flex-col justify-center max-container xl:px-0">
-                <div class="relative xl:w-4/5 flex flex-col justify-center items-start w-full min-xl:px-16 pt-28">
+            <section id="home" class="px-8 sm:px-16 xl:w-5/12 flex flex-col justify-center max-container min-h-screen xl:pl-8">
+                <div class="relative xl:w-full flex flex-col justify-center items-start w-full min-xl:px-16 pt-28">
                     <p class="text-coral-red text-xl mb-11">Our Summer collections</p>
                     <h1 class="font-bold font-palanquin text-7xl sm:text-8xl max-sm:leading-[82px]">
-                        <span class="xl:whitespace-nowrap bg-white relative z-10 pr-10">The New Arrival</span>
+                        <span class="xl:whitespace-nowrap xl:bg-white relative z-10 pr-10">The New Arrival</span>
                         <br>
-                        <span class="text-coral-red inline-block mt-6">Nike</span>
+                        <span class="text-coral-red inline-block xl:mt-6">Nike</span>
                         Shoes
                     </h1>
                     <p class="text-slate-gray leading-8 text-lg mt-8 mb-14 sm:max-w-sm">
                         Discover stylish Nike arrivals, quality comfort, and innovation for your active life
                     </p>
-                    <button class="flex items-center gap-4 bg-coral-red py-4 px-8 text-lg rounded-full text-white">
+                    <button class="button">
                         Shop now
                         <img src="./assets/icons/arrow-right.svg" alt="Arrow icon">
                     </button>
@@ -75,14 +75,14 @@
             </section>
             
             <!-- *Home image -->
-            <div class="bg-hero relative bg-primary xl:w-4/5 max-xl:py-40 xl:min-h-screen bg-center bg-cover flex items-center justify-center wide:mr-20">
-                <img src="./assets/images/big-shoe1.png" alt="Shoes collection" width="610px" height="500px" class="object-contain">
+            <div class="bg-hero relative bg-primary xl:w-full max-xl:py-40 xl:min-h-screen bg-center bg-cover flex items-center justify-center wide:mr-20">
+                <img src="./assets/images/big-shoe1.png" alt="Shoes collection" width="610px" height="500px" class="object-contain" id="big-shoes">
                 
                 <!-- *Shoes options to display image -->
                 <div class="absolute bottom-[-5%] flex max-sm:px-6 gap-6 items-center justify-center">
                     
                     <!-- *Option 1 -->
-                        <div class="border-2 border-transparent rounded-xl">
+                        <div class="border-2 border-coral-red rounded-xl">
                             <div class="shoes-option"> 
                                 <img src="./assets/images/thumbnail-shoe1.svg" width="130px" height="100px" class="object-contain">
                             </div>
@@ -130,7 +130,7 @@
                     
                     <!-- *Card 1 -->
                     <div class="cards">
-                        <img src="./assets/images/shoe4.svg" alt="Nike Air Jordan-01" class="w-[280px] h-[280px]">
+                        <img src="./assets/images/shoe4.svg" alt="Nike Air Jordan-01" class="w-[280px] h-[280px] img-transform">
                         <div class="card-rating">
                             <img src="./assets/icons/star.svg" alt="Star Logo" width="24px" height="24px">
                             <p class="rating-texto">(4.5)</p>
@@ -141,7 +141,7 @@
                     
                     <!-- *Card 2 -->
                     <div class="cards">
-                        <img src="./assets/images/shoe5.svg" alt="Nike Air Jordan-10" class="w-[280px] h-[280px]">
+                        <img src="./assets/images/shoe5.svg" alt="Nike Air Jordan-10" class="w-[280px] h-[280px] img-transform">
                         <div class="card-rating">
                             <img src="./assets/icons/star.svg" alt="Star Logo" width="24px" height="24px">
                             <p class="rating-texto">(4.5)</p>
@@ -152,7 +152,7 @@
                     
                     <!-- *Card 3 -->
                     <div class="cards">
-                        <img src="./assets/images/shoe6.svg" alt="Nike Air Jordan-100" class="w-[280px] h-[280px]">
+                        <img src="./assets/images/shoe6.svg" alt="Nike Air Jordan-100" class="w-[280px] h-[280px] img-transform">
                         <div class="card-rating">
                             <img src="./assets/icons/star.svg" alt="Star Logo" width="24px" height="24px">
                             <p class="rating-texto">(4.5)</p>
@@ -163,7 +163,7 @@
                     
                     <!-- *Card 4 -->
                     <div class="cards">
-                        <img src="./assets/images/shoe7.svg" alt="Nike Air Jordan-001" class="w-[280px] h-[280px]">
+                        <img src="./assets/images/shoe7.svg" alt="Nike Air Jordan-001" class="w-[280px] h-[280px] img-transform">
                         <div class="card-rating">
                             <img src="./assets/icons/star.svg" alt="Star Logo" width="24px" height="24px">
                             <p class="rating-texto">(4.5)</p>
@@ -193,9 +193,11 @@
                     
                     <!-- *About us button -->
                     <div class="flex items-start lg:flex-col mt-12">
-                        <button class="flex gap-4 py-4 px-8 bg-coral-red rounded-full text-white text-lg items-center">
-                            Shop now
-                            <img src="./assets/icons/arrow-right.svg" alt="Arrow icon">
+                        <button class="button">
+                            <a href="#products" class="flex gap-4">
+                                <p>Shop now</p>
+                                <img src="./assets/icons/arrow-right.svg" alt="Arrow icon">
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -209,7 +211,7 @@
         </section>
 
         <!-- *Our benefits -->
-        <section class="px-16 py-10">
+        <section class="px-8 sm:px-16 py-10">
             <section class="max-container flex justify-center flex-wrap gap-10">
                 <div class="card-benefits">
                     <div class="img-benefits">
@@ -234,10 +236,119 @@
                 </div>
             </section>
         </section>
-    </main>
-    <footer>
 
+        <!-- *Newsletter -->
+        <section class="px-8 sm:px-16 py-16 sm:py-32 w-full bg-pale-blue mt-8" id="contact-us">
+            <section class="flex gap-8 items-center justify-between p-2.5 w-full max-container max-lg:flex-col lg:justify-center">
+                <h3 class="font-palanquin text-5xl leading-[64px] font-bold lg:max-w-md">
+                    Sign Up from
+                    <span class="text-coral-red"> Updates </span>
+                    & Newsletter
+                </h3>
+                <div class="flex max-sm:flex-col w-full mt-4 gap-6 items-center sm:border sm:border-slate-gray rounded-full px-2 lg:max-w-[40%] ">
+                    <input type="email" id="newsletter" placeholder="Type your email here" class="input" required>
+                    <button class="bg-coral-red rounded-full py-3 w-1/2 text-white text-xl">Sign up</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <!-- *Footer -->
+    <footer class="bg-black px-8 pt-12 pb-8 sm:pt-24 sm:px-16">
+        <section class="flex flex-wrap gap-20 max-container">
+            <div class="flex justify-between max-lg:flex-col gap-20 flex-wrap w-full">
+                
+                <!-- *Footer text -->
+                <div class="flex flex-col gap-8">
+                    <a>
+                        <img src="./assets/images/footer-logo.svg" width="150px" height="50px">
+                    </a>
+                    <p class="mt-5 text-lg text-white-400 sm:max-w-sm">
+                        Get shoes ready for the new term at your nearest Nike store. Find your perfect size in Store. Get rewards.
+                    </p>
+                
+                    <!-- *Footer social media -->
+                    <div class="flex items-center gap-6">
+                        <a class="footer-img">
+                            <img src="./assets/icons/facebook.svg" width="24px" height="24px">
+                        </a>
+                        <a class="footer-img">
+                            <img src="./assets/icons/twitter.svg" width="24px" height="24px">
+                        </a>
+                        <a class="footer-img">
+                            <img src="./assets/icons/instagram.svg" width="24px" height="24px">
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- *List of helps in footer -->
+                <div>
+                    <div class="footer-div">
+                        <h3 class="footer-title">Help</h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="footer-li">
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="footer-li">
+                                <a href="#">FAQs</a>
+                            </li>
+                            <li class="footer-li">
+                                <a href="#">How it works</a>
+                            </li>
+                            <li class="footer-li">
+                                <a href=" #">Privacy policy</a>
+                            </li>
+                            <li class="footer-li">
+                                <a href="#">Payment policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- *Payments methods -->
+                <div class="flex flex-col gap-8">
+                    <h3 class="footer-title">Payment methods</h3>
+                    <div class="grid grid-cols-4 gap-4 gap-y-2 w-[200px]">
+                    
+                        <!-- *All methods -->
+                        <div class="payment-method">
+                            <img src="./assets/icons/mastercard.svg" alt="Mastercard card">
+                        </div>
+                        <div class="payment-method">
+                            <img src="./assets/icons/visa.svg" alt="Visa card">
+                        </div>
+                        <div class="payment-method">
+                            <img src="./assets/icons/amex.svg" alt="Amex card">
+                        </div>
+                        <div class="payment-method">
+                            <img src="./assets/icons/elo.svg" alt="Elo card">
+                        </div>
+                        <div class="payment-method">
+                            <img src="./assets/icons/hipercard.svg" alt="Hipercard card">
+                        </div>
+                        <div class="payment-method">
+                            <img src="./assets/icons/discover.svg" alt="Discover card">
+                        </div>
+                        <div class="payment-method">
+                            <img src="./assets/icons/boleto.svg" alt="Boleto">
+                        </div>
+                        <div class="payment-method">
+                            <img src="./assets/icons/pix.svg" alt="Pix">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *Copyright -->
+                <div class="flex flex-col sm:flex-row text-white-400 text-center text-lg sm:justify-between w-full">
+                    <p>&copy; Copyright. All rights reserved.</p>
+                    <a href="#" class="cursor-pointer">
+                        <p>Terms & conditions</p>
+                    </a>
+                </div>
+        </section>
     </footer>
+
 </body>
 
 </html>

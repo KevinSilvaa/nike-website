@@ -10,6 +10,16 @@
         margin: 0 auto;
     }
     
+    /* *Padding to apply in sections */
+    .padding {
+        @apply py-16 px-8 sm:py-24 sm:px-16;
+    }
+
+    /* *Class to page buttons */
+    .button {
+        @apply flex items-center gap-4 bg-coral-red py-4 px-8 text-lg rounded-full text-white
+    }
+    
     /* *Header navbar */
     .a-nav {
         @apply font-montserrat text-lg text-slate-gray leading-normal;
@@ -23,10 +33,6 @@
         @apply mt-2 text-slate-gray;
     }
     
-    /* *Padding to apply in sections */
-    .padding {
-        @apply py-16 px-8 sm:py-24 sm:px-16;
-    }
     
     /* *Shoes to display */
     .shoes-option {
@@ -39,6 +45,9 @@
     }
     .cards {
         @apply flex flex-1 flex-col w-full;
+    }
+    .img-transform {
+        @apply transition-all delay-200 ease-linear hover:scale-125 hover:pb-5;
     }
     .card-rating {
         @apply flex items-center gap-2 mt-8;
@@ -67,5 +76,31 @@
     }
     .title-benefits {
         @apply font-bold text-3xl font-palanquin mt-5;
+    }
+
+    /* *Newsletter */
+    .input {
+        @apply py-5 pl-4 border border-slate-gray rounded-full w-full outline-none sm:border-none bg-pale-blue placeholder:text-black;
+    }
+
+    /* *Footer */
+    .footer-img {
+        @apply bg-white rounded-full w-12 h-12 flex items-center justify-center cursor-pointer transition-transform delay-300 ease-in hover:scale-125;
+    }
+    .footer-div {
+        @apply flex flex-col gap-8;
+    }
+    .footer-title {
+        @apply text-white text-2xl font-medium;
+    }
+    
+    /* *Help list */
+    .footer-li {
+        @apply text-white-400 hover:text-slate-gray transition-all delay-100 ease-in;
+    }
+
+    /* *Payment methods */
+    .payment-method {
+        @apply bg-white w-12 h-8 flex items-center justify-center;
     }
 }
