@@ -1,6 +1,8 @@
 // *Hero section for shoes
 const options = document.querySelectorAll('.option');
 const bigShoes = document.getElementById('big-shoes');
+const imgs = document.querySelectorAll('.img');
+const border = document.querySelectorAll('.borda');
 const bigShoesOriginal = bigShoes.getAttribute('src');
 
 // *Hero section shoes options cards
@@ -32,13 +34,11 @@ hamburgerMenu.addEventListener('click', () => {
 // *Change image when clicking the card
 function changeImg(img) {
     for (let el of options) {
-        el.addEventListener('click', () => {
-            if (el.getAttribute('src') !== bigShoesOriginal) {
+        for (let image of imgs) {
+            if (el.getAttribute('src') !== image.getAttribute('src')) {
                 bigShoes.setAttribute('src', img);
-            } else {
-                bigShoesOriginal;
             }
-        })
+        }
     }
 }
 
