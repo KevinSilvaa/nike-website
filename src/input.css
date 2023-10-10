@@ -17,7 +17,7 @@
 
     /* *Class to page buttons */
     .button {
-        @apply flex items-center gap-4 bg-coral-red py-4 px-8 text-lg rounded-full text-white
+        @apply flex items-center gap-4 bg-coral-red py-4 px-8 text-lg rounded-full text-white hover:bg-black transition-all duration-500 ease-in-out;
     }
     
     /* *Header navbar */
@@ -53,7 +53,7 @@
         @apply flex flex-1 flex-col w-full;
     }
     .img-transform {
-        @apply transition-all delay-200 ease-linear hover:scale-125 hover:pb-5;
+        @apply transition-all duration-300 ease-linear hover:scale-125 hover:pb-5;
     }
     .card-rating {
         @apply flex items-center gap-2 mt-8;
@@ -91,7 +91,7 @@
 
     /* *Footer */
     .footer-img {
-        @apply bg-white rounded-full w-12 h-12 flex items-center justify-center cursor-pointer transition-transform delay-300 ease-in hover:scale-125;
+        @apply bg-white rounded-full w-12 h-12 flex items-center justify-center cursor-pointer transition-transform duration-300 ease-in-out hover:scale-125 hover:text-white;
     }
     .footer-div {
         @apply flex flex-col gap-8;

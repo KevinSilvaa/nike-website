@@ -2,7 +2,7 @@
 const options = document.querySelectorAll('.option');
 const bigShoes = document.getElementById('big-shoes');
 const imgs = document.querySelectorAll('.img');
-const border = document.querySelectorAll('.borda');
+const borderCard = document.querySelectorAll('.borda');
 const bigShoesOriginal = bigShoes.getAttribute('src');
 
 // *Hero section shoes options cards
@@ -26,23 +26,39 @@ const menuOpen = './assets/icons/hamburger-open.svg';
 // *Click event on hamburger menu image
 hamburgerMenu.addEventListener('click', () => {
     navbarList.classList.toggle('scale-x-0');
-    let teste = hamburgerMenu.getAttribute('src') === menuClose ? hamburgerMenu.setAttribute('src', menuOpen) : hamburgerMenu.setAttribute('src', menuClose);
+    let menu = hamburgerMenu.getAttribute('src') === menuClose ? hamburgerMenu.setAttribute('src', menuOpen) : hamburgerMenu.setAttribute('src', menuClose);
 })
 
+// // *Change image when clicking the card
+// function changeImg(img) {
+//     for (let el of options) {
+//         for (let image of imgs) {
+//             if (el.getAttribute('src') !== image.getAttribute('src')) {
+//                 bigShoes.setAttribute('src', img);
+//                 changeBorder();
+//             }
+//         }
+//     }
+// }
 
-
-// *Change image when clicking the card
+// *Change image and select border for respective card
 function changeImg(img) {
-    for (let el of options) {
+    options.forEach((el, index) => {
         for (let image of imgs) {
             if (el.getAttribute('src') !== image.getAttribute('src')) {
                 bigShoes.setAttribute('src', img);
             }
+            el.addEventListener('click', () => {
+                borderCard.forEach((border, indexBorder) => {
+                    index == indexBorder ? border.classList.add('border-coral-red') : border.classList.remove('border-coral-red');
+                })
+            })
         }
-    }
+    })
 }
 
-option1.addEventListener('click', () => {
+// *Each card event listener
+option1.addEventListener('mousedown', () => {
     changeImg(img1);
 })
 option2.addEventListener('click', () => {

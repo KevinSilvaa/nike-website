@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
     <link rel="stylesheet" href="../public/output.css">
+    <script src="https://kit.fontawesome.com/1d73e04100.js" crossorigin="anonymous"></script>
     <script src="./js/main.js" defer></script>
 </head>
 <body class="w-screen h-screen overflow-x-hidden">
@@ -91,14 +92,14 @@
             
             <!-- *Home image -->
             <div class="bg-hero relative bg-primary xl:w-full max-xl:py-40 xl:min-h-screen bg-center bg-cover flex items-center justify-center wide:mr-20 z-0">
-                <img src="./assets/images/big-shoe1.png" alt="Shoes collection" width="610px" height="500px" class="object-contain" id="big-shoes">
+                <img src="./assets/icons/basketball.png" alt="Shoes collection" width="610px" height="500px" class="object-contain" id="big-shoes">
                 
                 <!-- *Shoes options to display image -->
                 <div class="absolute bottom-[-5%] flex max-sm:px-6 gap-6 items-center justify-center">
                     
                     <!-- *Option 1 -->
                     <div class="option" id="option1">
-                        <div class="border-2 border-coral-red rounded-xl borda">
+                        <div class="border-2 border-transparent rounded-xl borda">
                             <div class="shoes-option"> 
                                 <img src="./assets/images/thumbnail-shoe1.svg" width="130px" height="100px" class="object-contain img">
                             </div>
@@ -264,7 +265,7 @@
                 </h3>
                 <div class="flex max-sm:flex-col w-full mt-4 gap-6 items-center sm:border sm:border-slate-gray rounded-full px-2 lg:max-w-[40%] ">
                     <input type="email" id="newsletter" placeholder="Type your email here" class="input" required>
-                    <button class="bg-coral-red rounded-full py-3 w-1/2 text-white text-xl">Sign up</button>
+                    <button class="bg-coral-red rounded-full py-3 w-1/2 text-white text-xl hover:bg-black transition-all duration-500 ease-in-out">Sign up</button>
                 </div>
             </section>
         </section>
@@ -286,14 +287,14 @@
                 
                     <!-- *Footer social media -->
                     <div class="flex items-center gap-6">
-                        <a class="footer-img">
-                            <img src="./assets/icons/facebook.svg" width="24px" height="24px">
+                        <a href="https://www.facebook.com/nike/" target="_blank" class="footer-img hover:bg-[#1877F2]">
+                            <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a class="footer-img">
-                            <img src="./assets/icons/twitter.svg" width="24px" height="24px">
+                        <a href="https://twitter.com/Nike" target="_blank"  class="footer-img hover:bg-[#1DA1F2]">
+                            <i class="fa-brands fa-twitter"></i>
                         </a>
-                        <a class="footer-img">
-                            <img src="./assets/icons/instagram.svg" width="24px" height="24px">
+                        <a href="https://www.instagram.com/nike/" target="_blank"  class="footer-img hover:bg-[#E4405F]">
+                            <i class="fa-brands fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
