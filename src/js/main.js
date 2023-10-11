@@ -29,18 +29,6 @@ hamburgerMenu.addEventListener('click', () => {
     let menu = hamburgerMenu.getAttribute('src') === menuClose ? hamburgerMenu.setAttribute('src', menuOpen) : hamburgerMenu.setAttribute('src', menuClose);
 })
 
-// // *Change image when clicking the card
-// function changeImg(img) {
-//     for (let el of options) {
-//         for (let image of imgs) {
-//             if (el.getAttribute('src') !== image.getAttribute('src')) {
-//                 bigShoes.setAttribute('src', img);
-//                 changeBorder();
-//             }
-//         }
-//     }
-// }
-
 // *Change image and select border for respective card
 function changeImg(img) {
     options.forEach(el => {

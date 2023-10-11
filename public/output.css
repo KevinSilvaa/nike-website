@@ -610,10 +610,11 @@ video {
   position: absolute;
   right: 0px;
   z-index: 20;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   margin-top: 1rem;
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: space-between;
   gap: 0.5rem;
@@ -939,6 +940,10 @@ video {
 
 .z-10{
   z-index: 10;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .z-\[5\]{
