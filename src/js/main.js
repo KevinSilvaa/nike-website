@@ -43,27 +43,35 @@ hamburgerMenu.addEventListener('click', () => {
 
 // *Change image and select border for respective card
 function changeImg(img) {
-    options.forEach((el, index) => {
-        for (let image of imgs) {
+    options.forEach(el => {
+        imgs.forEach(image => {
             if (el.getAttribute('src') !== image.getAttribute('src')) {
                 bigShoes.setAttribute('src', img);
             }
-            el.addEventListener('click', () => {
-                borderCard.forEach((border, indexBorder) => {
-                    index == indexBorder ? border.classList.add('border-coral-red') : border.classList.remove('border-coral-red');
-                })
-            })
-        }
+        });
     })
+}
+
+function changeBorder() {
+    options.forEach((element, index) => {
+        borderCard.forEach((border, indexBorder) => {
+            element.addEventListener('click', () => {
+                index === indexBorder ? border.classList.replace('border-transparent', 'border-coral-red') : border.classList.replace('border-coral-red', 'border-transparent');
+            })
+        });
+    });
 }
 
 // *Each card event listener
 option1.addEventListener('mousedown', () => {
     changeImg(img1);
+    changeBorder();
 })
-option2.addEventListener('click', () => {
+option2.addEventListener('mousedown', () => {
     changeImg(img2);
+    changeBorder();
 })
-option3.addEventListener('click', () => {
+option3.addEventListener('mousedown', () => {
     changeImg(img3);
+    changeBorder();
 })
