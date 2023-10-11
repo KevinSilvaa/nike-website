@@ -17,8 +17,8 @@ module.exports = {
         'montserrat': ['Montserrat', 'sans-serif']
       },
       backgroundImage: {
-        'hero': "url('../src/assets/images/collection-background.svg')",
-        'card': "url('../src/assets/images/thumbnail-background.svg')"
+        'hero': "url('../public/assets/images/collection-background.svg')",
+        'card': "url('../public/assets/images/thumbnail-background.svg')"
       },
       boxShadow: {
         '3x1': '0 10px 40px rgba(0, 0, 0, 0.1)'
