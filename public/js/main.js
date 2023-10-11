@@ -11,17 +11,17 @@ const option2 = document.getElementById('option2');
 const option3 = document.getElementById('option3');
 
 // *Images to put when calling the function
-const img1 = './assets/images/big-shoe1.png';
-const img2 = './assets/images/big-shoe2.png';
-const img3 = './assets/images/big-shoe3.png';
+const img1 = '../assets/images/big-shoe1.png';
+const img2 = '../assets/images/big-shoe2.png';
+const img3 = '../assets/images/big-shoe3.png';
 
 // *Hamburger menu variables
 const hamburgerMenu = document.getElementById('menu');
 const navbarList = document.getElementById('mobile');
 
 // *Hamburger menu open and close
-const menuClose = './assets/icons/hamburger.svg';
-const menuOpen = './assets/icons/hamburger-open.svg';
+const menuClose = '../assets/icons/hamburger.svg';
+const menuOpen = '../assets/icons/hamburger-open.svg';
 
 // *Click event on hamburger menu image
 hamburgerMenu.addEventListener('click', () => {
