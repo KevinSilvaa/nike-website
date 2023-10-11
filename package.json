@@ -4,5 +4,15 @@
   },
   "dependencies": {
     "tailwind-scrollbar-hide": "^1.1.7"
-  }
+  },
+  "name": "nike-website",
+  "description": "Peguei o exemplo de um projeto da internet e fui recriando com as minhas modificações",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
