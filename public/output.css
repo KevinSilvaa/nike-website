@@ -997,10 +997,6 @@ video {
   height: 280px;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
@@ -1019,10 +1015,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-screen{
-  width: 100vw;
 }
 
 .flex-1{
@@ -1100,10 +1092,6 @@ video {
 
 .gap-y-2{
   row-gap: 0.5rem;
-}
-
-.overflow-x-hidden{
-  overflow-x: hidden;
 }
 
 .scroll-smooth{
@@ -1319,6 +1307,19 @@ video {
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* *Remover scrollbar */
 
 .hover\:bg-\[\#1877F2\]:hover{
   --tw-bg-opacity: 1;

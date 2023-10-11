@@ -109,4 +109,16 @@
     .payment-method {
         @apply bg-white w-12 h-8 flex items-center justify-center;
     }
+
+}
+
+/* *Remover scrollbar */
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
 }
