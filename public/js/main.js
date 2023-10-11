@@ -11,9 +11,9 @@ const option2 = document.getElementById('option2');
 const option3 = document.getElementById('option3');
 
 // *Images to put when calling the function
-const img1 = '../src/assets/images/big-shoe1.png';
-const img2 = '../src/assets/images/big-shoe2.png';
-const img3 = '../src/assets/images/big-shoe3.png';
+const img1 = '../public/assets/images/big-shoe1.png';
+const img2 = '../public/assets/images/big-shoe2.png';
+const img3 = '../public/assets/images/big-shoe3.png';
 
 // *Hamburger menu variables
 const hamburgerMenu = document.getElementById('menu');
